@@ -1,0 +1,18 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ns:interface_remote",
+      "menu_category": { "category": "equipment" }
+    },
+    "components": {
+      "minecraft:display_name": { "value": "Interface Remote" },
+      "minecraft:icon": "ns_interface_remote",
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": false,
+      "minecraft:interact_button": "Open / Click / Close",
+      "minecraft:use_modifiers": { "use_duration": 0.1, "movement_modifier": 1, "emit_vibrations": false, "start_using": "always" },
+      "ns:interface_remote": {}
+    }
+  }
+}

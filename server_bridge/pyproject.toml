@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "endstone-leaderboard-bridge"
+version = "1.2.1"
+description = "Endstone packet leaderboards with a bundled auto-installing resource pack"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.entry-points.endstone]
+leaderboard_bridge = "ns_lb_bridge:LeaderboardBridgePlugin"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ns_lb_bridge"]
+
+[tool.hatch.build.targets.sdist]
+include = ["ns_lb_bridge", "pyproject.toml"]

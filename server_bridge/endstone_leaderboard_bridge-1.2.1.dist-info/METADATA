@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: endstone-leaderboard-bridge
+Version: 1.2.1
+Summary: Endstone packet leaderboards and 3D blackjack with bundled resources
+Requires-Python: >=3.10

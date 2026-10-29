@@ -1,0 +1,13 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Entity UI Demo - Resources",
+    "description": "Baked 3D pages, animated glyphs and HUD toast routing.",
+    "uuid": "c05a94e1-7c75-4cbb-8bcd-c08cf7f2e83e",
+    "version": [1, 2, 0],
+    "min_engine_version": [1, 26, 30]
+  },
+  "modules": [
+    { "type": "resources", "uuid": "72396354-c1f9-4246-887d-3f32f331d6e6", "version": [1, 2, 0] }
+  ]
+}

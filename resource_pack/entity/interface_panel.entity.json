@@ -1,0 +1,197 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ns:interface_panel",
+      "materials": {
+        "panel": "entity_alphatest",
+        "animated": "player_animated"
+      },
+      "scripts": {
+        "pre_animation": [
+          "v.pg = q.property('ns:page');"
+        ],
+        "scale": "q.property('ns:scale') / 1000",
+        "animate": [
+          "layout"
+        ]
+      },
+      "textures": {
+        "p0": "textures/entity/ns/page_dashboard",
+        "p1": "textures/entity/ns/page_controls",
+        "p2": "textures/entity/ns/page_inventory",
+        "p3": "textures/entity/ns/page_confirm",
+        "p4": "textures/entity/ns/page_keyboard",
+        "p5": "textures/entity/ns/page_amount",
+        "p6": "textures/entity/ns/page_leaderboard",
+        "p7": "textures/entity/ns/page_blackjack",
+        "p8": "textures/entity/ns/page_blackjack_rules",
+        "icons": "textures/entity/ns/icons",
+        "cards": "textures/entity/ns/playing_cards"
+      },
+      "geometry": {
+        "p0": "geometry.ns.panel.dashboard",
+        "p1": "geometry.ns.panel.controls",
+        "icon0": "geometry.ns.icon.inventory.0",
+        "icon1": "geometry.ns.icon.inventory.1",
+        "icon2": "geometry.ns.icon.inventory.2",
+        "icon3": "geometry.ns.icon.inventory.3",
+        "icon4": "geometry.ns.icon.inventory.4",
+        "icon5": "geometry.ns.icon.inventory.5",
+        "icon6": "geometry.ns.icon.inventory.6",
+        "icon7": "geometry.ns.icon.inventory.7",
+        "icon8": "geometry.ns.icon.inventory.8",
+        "icon9": "geometry.ns.icon.inventory.9",
+        "icon10": "geometry.ns.icon.inventory.10",
+        "icon11": "geometry.ns.icon.inventory.11",
+        "p2": "geometry.ns.panel.inventory",
+        "p3": "geometry.ns.panel.confirm",
+        "p4": "geometry.ns.panel.keyboard",
+        "p5": "geometry.ns.panel.amount",
+        "p6": "geometry.ns.panel.leaderboard",
+        "bj_card0": "geometry.ns.bj_card0",
+        "bj_card1": "geometry.ns.bj_card1",
+        "bj_card2": "geometry.ns.bj_card2",
+        "bj_card3": "geometry.ns.bj_card3",
+        "bj_card4": "geometry.ns.bj_card4",
+        "bj_card5": "geometry.ns.bj_card5",
+        "bj_card6": "geometry.ns.bj_card6",
+        "bj_card7": "geometry.ns.bj_card7",
+        "bj_card8": "geometry.ns.bj_card8",
+        "bj_card9": "geometry.ns.bj_card9",
+        "bj_card10": "geometry.ns.bj_card10",
+        "bj_card11": "geometry.ns.bj_card11",
+        "bj_card12": "geometry.ns.bj_card12",
+        "bj_card13": "geometry.ns.bj_card13",
+        "bj_card14": "geometry.ns.bj_card14",
+        "bj_card15": "geometry.ns.bj_card15",
+        "bj_card16": "geometry.ns.bj_card16",
+        "bj_card17": "geometry.ns.bj_card17",
+        "bj_card18": "geometry.ns.bj_card18",
+        "bj_card19": "geometry.ns.bj_card19",
+        "bj_card20": "geometry.ns.bj_card20",
+        "bj_card21": "geometry.ns.bj_card21",
+        "bj_card22": "geometry.ns.bj_card22",
+        "bj_card23": "geometry.ns.bj_card23",
+        "p7": "geometry.ns.panel.blackjack",
+        "p8": "geometry.ns.panel.blackjack_rules"
+      },
+      "animations": {
+        "layout": "animation.ns.panel"
+      },
+      "render_controllers": [
+        {
+          "controller.render.ns.page_0": "v.pg == 0"
+        },
+        {
+          "controller.render.ns.page_1": "v.pg == 1"
+        },
+        {
+          "controller.render.ns.page_2": "v.pg == 2"
+        },
+        {
+          "controller.render.ns.page_3": "v.pg == 3"
+        },
+        {
+          "controller.render.ns.page_4": "v.pg == 4"
+        },
+        {
+          "controller.render.ns.page_5": "v.pg == 5"
+        },
+        {
+          "controller.render.ns.page_6": "v.pg == 6"
+        },
+        {
+          "controller.render.ns.page_7": "v.pg == 7"
+        },
+        {
+          "controller.render.ns.page_8": "v.pg == 8"
+        },
+        "controller.render.ns.icon0",
+        "controller.render.ns.icon1",
+        "controller.render.ns.icon2",
+        "controller.render.ns.icon3",
+        "controller.render.ns.icon4",
+        "controller.render.ns.icon5",
+        "controller.render.ns.icon6",
+        "controller.render.ns.icon7",
+        "controller.render.ns.icon8",
+        "controller.render.ns.icon9",
+        "controller.render.ns.icon10",
+        "controller.render.ns.icon11",
+        {
+          "controller.render.ns.bj_card0": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards0') / 1), 64) != 0"
+        },
+        {
+          "controller.render.ns.bj_card1": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards0') / 64), 64) != 0"
+        },
+        {
+          "controller.render.ns.bj_card2": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards0') / 4096), 64) != 0"
+        },
+        {
+          "controller.render.ns.bj_card3": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards0') / 262144), 64) != 0"
+        },
+        {
+          "controller.render.ns.bj_card4": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards1') / 1), 64) != 0"
+        },
+        {
+          "controller.render.ns.bj_card5": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards1') / 64), 64) != 0"
+        },
+        {
+          "controller.render.ns.bj_card6": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards1') / 4096), 64) != 0"
+        },
+        {
+          "controller.render.ns.bj_card7": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards1') / 262144), 64) != 0"
+        },
+        {
+          "controller.render.ns.bj_card8": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards2') / 1), 64) != 0"
+        },
+        {
+          "controller.render.ns.bj_card9": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards2') / 64), 64) != 0"
+        },
+        {
+          "controller.render.ns.bj_card10": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards2') / 4096), 64) != 0"
+        },
+        {
+          "controller.render.ns.bj_card11": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards2') / 262144), 64) != 0"
+        },
+        {
+          "controller.render.ns.bj_card12": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards3') / 1), 64) != 0"
+        },
+        {
+          "controller.render.ns.bj_card13": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards3') / 64), 64) != 0"
+        },
+        {
+          "controller.render.ns.bj_card14": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards3') / 4096), 64) != 0"
+        },
+        {
+          "controller.render.ns.bj_card15": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards3') / 262144), 64) != 0"
+        },
+        {
+          "controller.render.ns.bj_card16": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards4') / 1), 64) != 0"
+        },
+        {
+          "controller.render.ns.bj_card17": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards4') / 64), 64) != 0"
+        },
+        {
+          "controller.render.ns.bj_card18": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards4') / 4096), 64) != 0"
+        },
+        {
+          "controller.render.ns.bj_card19": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards4') / 262144), 64) != 0"
+        },
+        {
+          "controller.render.ns.bj_card20": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards5') / 1), 64) != 0"
+        },
+        {
+          "controller.render.ns.bj_card21": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards5') / 64), 64) != 0"
+        },
+        {
+          "controller.render.ns.bj_card22": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards5') / 4096), 64) != 0"
+        },
+        {
+          "controller.render.ns.bj_card23": "v.pg == 7 && math.mod(math.floor(q.property('ns:cards5') / 262144), 64) != 0"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,2 @@
+[endstone]
+leaderboard_bridge = ns_lb_bridge:LeaderboardBridgePlugin

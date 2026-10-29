@@ -1,0 +1,405 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "ns:text_layer",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "properties": {
+        "ns:page": {
+          "type": "int",
+          "range": [
+            0,
+            8
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:layer": {
+          "type": "int",
+          "range": [
+            0,
+            6
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:scale": {
+          "type": "int",
+          "range": [
+            0,
+            2000
+          ],
+          "default": 1000,
+          "client_sync": true
+        },
+        "ns:tip_xy": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:tip_on": {
+          "type": "int",
+          "range": [
+            0,
+            1
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t0": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t1": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t2": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t3": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t4": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t5": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t6": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t7": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t8": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t9": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t10": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t11": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t12": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t13": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t14": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t15": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t16": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t17": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t18": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t19": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t20": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t21": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t22": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t23": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t24": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t25": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "ns:t26": {
+          "type": "int",
+          "range": [
+            0,
+            16777215
+          ],
+          "default": 0,
+          "client_sync": true
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "ns_interface"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.01,
+        "height": 0.01
+      },
+      "minecraft:custom_hit_test": {
+        "hitboxes": [
+          {
+            "width": 5,
+            "height": 3,
+            "pivot": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "interact_text": "Choose button",
+            "swing": false,
+            "use_item": false,
+            "on_interact": {
+              "event": "ns:interact",
+              "target": "self"
+            }
+          }
+        ]
+      },
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": "no"
+          }
+        ]
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+      "minecraft:persistent": {},
+      "minecraft:loot": {
+        "table": "loot_tables/ns/empty.json"
+      }
+    },
+    "component_groups": {
+      "ns:remove": {
+        "minecraft:instant_despawn": {}
+      },
+      "ns:heartbeat": {
+        "minecraft:timer": {
+          "looping": false,
+          "time": 30,
+          "time_down_event": {
+            "event": "ns:expire",
+            "target": "self"
+          }
+        }
+      }
+    },
+    "events": {
+      "ns:interact": {},
+      "ns:expire": {
+        "add": {
+          "component_groups": [
+            "ns:remove"
+          ]
+        }
+      },
+      "ns:refresh": {
+        "remove": {
+          "component_groups": [
+            "ns:heartbeat"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "ns:heartbeat"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "ns:heartbeat"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "pages": [
+    {
+      "id": "dashboard",
+      "elements": 5,
+      "cells": 196,
+      "layers": 2
+    },
+    {
+      "id": "controls",
+      "elements": 9,
+      "cells": 152,
+      "layers": 2
+    },
+    {
+      "id": "inventory",
+      "elements": 13,
+      "cells": 238,
+      "layers": 3
+    },
+    {
+      "id": "confirm",
+      "elements": 2,
+      "cells": 264,
+      "layers": 3
+    },
+    {
+      "id": "keyboard",
+      "elements": 40,
+      "cells": 222,
+      "layers": 3
+    },
+    {
+      "id": "amount",
+      "elements": 13,
+      "cells": 216,
+      "layers": 2
+    },
+    {
+      "id": "leaderboard",
+      "elements": 0,
+      "cells": 752,
+      "layers": 7
+    },
+    {
+      "id": "blackjack",
+      "elements": 20,
+      "cells": 605,
+      "layers": 6
+    },
+    {
+      "id": "blackjack_rules",
+      "elements": 1,
+      "cells": 720,
+      "layers": 7
+    }
+  ],
+  "properties": {
+    "panel": 28,
+    "textLayer": 32
+  },
+  "glyphs": 64,
+  "maxLayers": 7,
+  "performance": {
+    "glyphQuadsPerRenderer": 1,
+    "blankGlyphsSkipRenderer": true,
+    "pageTextureBytes": 61888064,
+    "previousPageTextureBytes": 150994944,
+    "leaderboardFrameTextureBytes": 1024
+  }
+}

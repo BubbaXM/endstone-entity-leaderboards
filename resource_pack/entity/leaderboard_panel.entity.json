@@ -1,0 +1,23 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ns:leaderboard_panel",
+      "materials": {
+        "panel": "entity_alphatest"
+      },
+      "scripts": {
+        "scale": "q.property('ns:scale') / 1000"
+      },
+      "textures": {
+        "frame": "textures/entity/ns/leaderboard_frame"
+      },
+      "geometry": {
+        "default": "geometry.ns.leaderboard_frame"
+      },
+      "render_controllers": [
+        "controller.render.ns.lb_frame"
+      ]
+    }
+  }
+}

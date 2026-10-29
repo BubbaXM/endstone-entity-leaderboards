@@ -1,0 +1,8 @@
+{
+  "resource_pack_name": "entity_ui_demo",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "ns_interface_remote": { "textures": "textures/items/interface_remote" },
+    "ns_transparent_remote": { "textures": "textures/items/transparent_remote" }
+  }
+}

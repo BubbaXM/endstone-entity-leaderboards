@@ -1,0 +1,269 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.ns.panel": {
+      "loop": true,
+      "bones": {
+        "hover": {
+          "position": [
+            "-(math.mod(q.property('ns:hover_xy'), 1024)) * 0.1",
+            "-(math.floor(q.property('ns:hover_xy') / 1024)) * 0.1",
+            0
+          ],
+          "scale": [
+            "math.max(4, math.mod(q.property('ns:hover_wh'), 1024)) / 8",
+            "math.max(4, math.floor(q.property('ns:hover_wh') / 1024)) / 8",
+            1
+          ]
+        },
+        "hover_00": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            "8 / (math.max(4, math.mod(q.property('ns:hover_wh'), 1024)))",
+            "8 / (math.max(4, math.floor(q.property('ns:hover_wh') / 1024)))",
+            1
+          ]
+        },
+        "hover_01": {
+          "position": [
+            "-(2 * 8 / (math.max(4, math.mod(q.property('ns:hover_wh'), 1024))) - 2) * 0.1",
+            0,
+            0
+          ],
+          "scale": [
+            "(math.max(4, math.mod(q.property('ns:hover_wh'), 1024)) - 4) * 8 / ((math.max(4, math.mod(q.property('ns:hover_wh'), 1024))) * 4)",
+            "8 / (math.max(4, math.floor(q.property('ns:hover_wh') / 1024)))",
+            1
+          ]
+        },
+        "hover_02": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            "8 / (math.max(4, math.mod(q.property('ns:hover_wh'), 1024)))",
+            "8 / (math.max(4, math.floor(q.property('ns:hover_wh') / 1024)))",
+            1
+          ]
+        },
+        "hover_10": {
+          "position": [
+            0,
+            "-(2 * 8 / (math.max(4, math.floor(q.property('ns:hover_wh') / 1024))) - 2) * 0.1",
+            0
+          ],
+          "scale": [
+            "8 / (math.max(4, math.mod(q.property('ns:hover_wh'), 1024)))",
+            "(math.max(4, math.floor(q.property('ns:hover_wh') / 1024)) - 4) * 8 / ((math.max(4, math.floor(q.property('ns:hover_wh') / 1024))) * 4)",
+            1
+          ]
+        },
+        "hover_11": {
+          "position": [
+            "-(2 * 8 / (math.max(4, math.mod(q.property('ns:hover_wh'), 1024))) - 2) * 0.1",
+            "-(2 * 8 / (math.max(4, math.floor(q.property('ns:hover_wh') / 1024))) - 2) * 0.1",
+            0
+          ],
+          "scale": [
+            "(math.max(4, math.mod(q.property('ns:hover_wh'), 1024)) - 4) * 8 / ((math.max(4, math.mod(q.property('ns:hover_wh'), 1024))) * 4)",
+            "(math.max(4, math.floor(q.property('ns:hover_wh') / 1024)) - 4) * 8 / ((math.max(4, math.floor(q.property('ns:hover_wh') / 1024))) * 4)",
+            1
+          ]
+        },
+        "hover_12": {
+          "position": [
+            0,
+            "-(2 * 8 / (math.max(4, math.floor(q.property('ns:hover_wh') / 1024))) - 2) * 0.1",
+            0
+          ],
+          "scale": [
+            "8 / (math.max(4, math.mod(q.property('ns:hover_wh'), 1024)))",
+            "(math.max(4, math.floor(q.property('ns:hover_wh') / 1024)) - 4) * 8 / ((math.max(4, math.floor(q.property('ns:hover_wh') / 1024))) * 4)",
+            1
+          ]
+        },
+        "hover_20": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            "8 / (math.max(4, math.mod(q.property('ns:hover_wh'), 1024)))",
+            "8 / (math.max(4, math.floor(q.property('ns:hover_wh') / 1024)))",
+            1
+          ]
+        },
+        "hover_21": {
+          "position": [
+            "-(2 * 8 / (math.max(4, math.mod(q.property('ns:hover_wh'), 1024))) - 2) * 0.1",
+            0,
+            0
+          ],
+          "scale": [
+            "(math.max(4, math.mod(q.property('ns:hover_wh'), 1024)) - 4) * 8 / ((math.max(4, math.mod(q.property('ns:hover_wh'), 1024))) * 4)",
+            "8 / (math.max(4, math.floor(q.property('ns:hover_wh') / 1024)))",
+            1
+          ]
+        },
+        "hover_22": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            "8 / (math.max(4, math.mod(q.property('ns:hover_wh'), 1024)))",
+            "8 / (math.max(4, math.floor(q.property('ns:hover_wh') / 1024)))",
+            1
+          ]
+        },
+        "tooltip": {
+          "position": [
+            "-(math.mod(q.property('ns:tip_xy'), 1024)) * 0.1",
+            "-(math.floor(q.property('ns:tip_xy') / 1024)) * 0.1",
+            0
+          ],
+          "scale": [
+            "math.max(4, math.mod(q.property('ns:tip_wh'), 1024)) / 180",
+            "math.max(4, math.floor(q.property('ns:tip_wh') / 1024)) / 38",
+            1
+          ]
+        },
+        "tooltip_00": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            "180 / (math.max(4, math.mod(q.property('ns:tip_wh'), 1024)))",
+            "38 / (math.max(4, math.floor(q.property('ns:tip_wh') / 1024)))",
+            1
+          ]
+        },
+        "tooltip_01": {
+          "position": [
+            "-(2 * 180 / (math.max(4, math.mod(q.property('ns:tip_wh'), 1024))) - 2) * 0.1",
+            0,
+            0
+          ],
+          "scale": [
+            "(math.max(4, math.mod(q.property('ns:tip_wh'), 1024)) - 4) * 180 / ((math.max(4, math.mod(q.property('ns:tip_wh'), 1024))) * 176)",
+            "38 / (math.max(4, math.floor(q.property('ns:tip_wh') / 1024)))",
+            1
+          ]
+        },
+        "tooltip_02": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            "180 / (math.max(4, math.mod(q.property('ns:tip_wh'), 1024)))",
+            "38 / (math.max(4, math.floor(q.property('ns:tip_wh') / 1024)))",
+            1
+          ]
+        },
+        "tooltip_10": {
+          "position": [
+            0,
+            "-(2 * 38 / (math.max(4, math.floor(q.property('ns:tip_wh') / 1024))) - 2) * 0.1",
+            0
+          ],
+          "scale": [
+            "180 / (math.max(4, math.mod(q.property('ns:tip_wh'), 1024)))",
+            "(math.max(4, math.floor(q.property('ns:tip_wh') / 1024)) - 4) * 38 / ((math.max(4, math.floor(q.property('ns:tip_wh') / 1024))) * 34)",
+            1
+          ]
+        },
+        "tooltip_11": {
+          "position": [
+            "-(2 * 180 / (math.max(4, math.mod(q.property('ns:tip_wh'), 1024))) - 2) * 0.1",
+            "-(2 * 38 / (math.max(4, math.floor(q.property('ns:tip_wh') / 1024))) - 2) * 0.1",
+            0
+          ],
+          "scale": [
+            "(math.max(4, math.mod(q.property('ns:tip_wh'), 1024)) - 4) * 180 / ((math.max(4, math.mod(q.property('ns:tip_wh'), 1024))) * 176)",
+            "(math.max(4, math.floor(q.property('ns:tip_wh') / 1024)) - 4) * 38 / ((math.max(4, math.floor(q.property('ns:tip_wh') / 1024))) * 34)",
+            1
+          ]
+        },
+        "tooltip_12": {
+          "position": [
+            0,
+            "-(2 * 38 / (math.max(4, math.floor(q.property('ns:tip_wh') / 1024))) - 2) * 0.1",
+            0
+          ],
+          "scale": [
+            "180 / (math.max(4, math.mod(q.property('ns:tip_wh'), 1024)))",
+            "(math.max(4, math.floor(q.property('ns:tip_wh') / 1024)) - 4) * 38 / ((math.max(4, math.floor(q.property('ns:tip_wh') / 1024))) * 34)",
+            1
+          ]
+        },
+        "tooltip_20": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            "180 / (math.max(4, math.mod(q.property('ns:tip_wh'), 1024)))",
+            "38 / (math.max(4, math.floor(q.property('ns:tip_wh') / 1024)))",
+            1
+          ]
+        },
+        "tooltip_21": {
+          "position": [
+            "-(2 * 180 / (math.max(4, math.mod(q.property('ns:tip_wh'), 1024))) - 2) * 0.1",
+            0,
+            0
+          ],
+          "scale": [
+            "(math.max(4, math.mod(q.property('ns:tip_wh'), 1024)) - 4) * 180 / ((math.max(4, math.mod(q.property('ns:tip_wh'), 1024))) * 176)",
+            "38 / (math.max(4, math.floor(q.property('ns:tip_wh') / 1024)))",
+            1
+          ]
+        },
+        "tooltip_22": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            "180 / (math.max(4, math.mod(q.property('ns:tip_wh'), 1024)))",
+            "38 / (math.max(4, math.floor(q.property('ns:tip_wh') / 1024)))",
+            1
+          ]
+        },
+        "cursor": {
+          "position": [
+            "-(math.mod(q.property('ns:cursor_xy'), 1024)) * 0.1",
+            "-(math.floor(q.property('ns:cursor_xy') / 1024)) * 0.1",
+            0
+          ]
+        }
+      }
+    },
+    "animation.ns.text": {
+      "loop": true,
+      "bones": {
+        "tip_text": {
+          "position": [
+            "-(math.mod(q.property('ns:tip_xy'), 1024)) * 0.1",
+            "-(math.floor(q.property('ns:tip_xy') / 1024)) * 0.1",
+            0
+          ]
+        }
+      }
+    }
+  }
+}

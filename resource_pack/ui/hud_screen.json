@@ -1,0 +1,82 @@
+{
+  "namespace": "hud",
+  "root_panel": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "control_name": "hud_title_text_area",
+        "operation": "replace",
+        "value": {
+          "hud_title_text_area": {
+            "type": "panel",
+            "size": ["100%", "100%"],
+            "factory": {
+              "name": "hud_title_text_factory",
+              "control_ids": { "hud_title_text": "hud_title_text@hud.ns_title_router" }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "ns_title_router": {
+    "type": "panel",
+    "size": ["100%", "100%"],
+    "controls": [
+      {
+        "vanilla_title@hud.hud_title_text": {
+          "bindings": [
+            { "binding_name": "#hud_title_text_string", "binding_type": "global" },
+            {
+              "binding_type": "view",
+              "source_property_name": "((#hud_title_text_string - 'nsui:') = #hud_title_text_string)",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "ns_toast": {
+          "type": "image",
+          "texture": "textures/ui/ns_toast",
+          "size": [240, 40],
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "offset": [-8, 12],
+          "layer": 100,
+          "alpha": "@hud.anim_title_text_alpha_in",
+          "propagate_alpha": true,
+          "bindings": [
+            { "binding_name": "#hud_title_text_string", "binding_type": "global" },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_title_text_string - 'nsui:') = #hud_title_text_string))",
+              "target_property_name": "#visible"
+            }
+          ],
+          "controls": [
+            {
+              "message": {
+                "type": "label",
+                "text": "#text",
+                "size": [224, 32],
+                "color": [0.95, 0.97, 1.0],
+                "shadow": true,
+                "localize": false,
+                "text_alignment": "left",
+                "bindings": [
+                  { "binding_name": "#hud_title_text_string", "binding_type": "global" },
+                  {
+                    "binding_type": "view",
+                    "source_property_name": "(#hud_title_text_string - 'nsui:')",
+                    "target_property_name": "#text"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

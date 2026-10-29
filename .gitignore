@@ -1,0 +1,30 @@
+node_modules/
+dist/
+
+# Python caches, build output and local environments
+__pycache__/
+*.py[cod]
+build/
+*.egg-info/
+*.dist-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.test-tmp/
+/tests/build-temp/
+
+# The direct source installer needs these two loader metadata files.
+!server_bridge/endstone_leaderboard_bridge-1.2.1.dist-info/
+server_bridge/endstone_leaderboard_bridge-1.2.1.dist-info/*
+!server_bridge/endstone_leaderboard_bridge-1.2.1.dist-info/METADATA
+!server_bridge/endstone_leaderboard_bridge-1.2.1.dist-info/entry_points.txt
+
+# Local configuration and editor files
+.env
+.env.*
+*.log
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

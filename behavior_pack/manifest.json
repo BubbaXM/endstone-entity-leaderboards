@@ -1,0 +1,18 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Entity UI Demo - Behavior",
+    "description": "Standalone gaze-operated 3D panels. No forms or inventory menus.",
+    "uuid": "b8721bce-5294-4c95-8d78-6294d67c9612",
+    "version": [1, 2, 0],
+    "min_engine_version": [1, 26, 30]
+  },
+  "modules": [
+    { "type": "data", "uuid": "c159c1dc-49b5-4ec9-b7f7-c470cf11620e", "version": [1, 2, 0] },
+    { "type": "script", "language": "javascript", "entry": "scripts/main.js", "uuid": "47d1e2d6-27b5-4ac4-8c50-a3369860bd84", "version": [1, 2, 0] }
+  ],
+  "dependencies": [
+    { "uuid": "c05a94e1-7c75-4cbb-8bcd-c08cf7f2e83e", "version": [1, 2, 0] },
+    { "module_name": "@minecraft/server", "version": "2.0.0" }
+  ]
+}

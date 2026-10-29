@@ -1,0 +1,17 @@
+{
+  "name": "bedrock-entity-ui-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build-ui.mjs && python -B tools/bundle-resources.py",
+    "build:wheel": "npm run build && python -m pip wheel ./server_bridge --no-deps --wheel-dir dist",
+    "verify:wheel": "python -B tools/verify-wheel.py",
+    "test": "node --import ./tests/register-mock.mjs --test tests/*.test.mjs",
+    "test:bridge": "python -B -m unittest discover -s tests -p test_*.py",
+    "typecheck": "tsc --allowJs --checkJs --noEmit --module nodenext --moduleResolution nodenext --target es2022 --skipLibCheck behavior_pack/scripts/main.js behavior_pack/scripts/ui/session.js",
+    "check": "npm run build && npm test && npm run test:bridge && node tools/validate.mjs && npm run typecheck",
+    "install:server": "node tools/install.mjs ../bedrock_server"
+  },
+  "devDependencies": { "@minecraft/server": "2.0.0", "typescript": "5.9.3" }
+}

@@ -1,0 +1,64 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.ns.bj_card4",
+        "texture_width": 864,
+        "texture_height": 816,
+        "visible_bounds_width": 8,
+        "visible_bounds_height": 6,
+        "visible_bounds_offset": [
+          0,
+          0,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bj_card4",
+          "parent": "root",
+          "pivot": [
+            13.200000000000001,
+            16.400000000000002,
+            0.02
+          ],
+          "cubes": [
+            {
+              "origin": [
+                8.4,
+                9.600000000000001,
+                0.02
+              ],
+              "size": [
+                4.800000000000001,
+                6.800000000000001,
+                0
+              ],
+              "uv": {
+                "south": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    96,
+                    136
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
